@@ -24,6 +24,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <httpProtocol>  
+      <customHeaders>  
+       <add name="Access-Control-Allow-Origin" value="*" />  
+       <add name="Access-Control-Allow-Headers" value="Content-Type" />  
+       <add name="Access-Control-Allow-Methods" value="GET, POST, PUT, DELETE, OPTIONS" />  
+      </customHeaders>  
+    </httpProtocol>  
     <title>React App</title>
   </head>
   <body>
